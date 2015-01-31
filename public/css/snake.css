@@ -1,0 +1,45 @@
+
+
+/* Start Sprite Master CSS */
+.b0,.f0,.h0,.h0t,.h1,.h1t,.h2,.h2t,.h3,.h3t,.r0,.r1,.r2,.r3,.s0,.s1,.s2,.s3,.t0,.t1,.t2,.t3,.r1001,.r0-1-10,.r10-10,.r01-10,.r0110,.r-100-1,.r0-110,.r-1010,.r-1001,.r100-1{display: inline-block;background-repeat: no-repeat;background-image: url('snake.png');}
+.b0{background-position:0px 0px;width:50px;height:50px;}
+.f0{background-position:0px -50px;width:50px;height:50px;}
+.h2{background-position:0px -100px;width:50px;height:50px;}
+.h2t{background-position:-50px 0px;width:50px;height:50px;}
+.h1{background-position:-50px -50px;width:50px;height:50px;}
+.h1t{background-position:-50px -100px;width:50px;height:50px;}
+.h0{background-position:-100px 0px;width:50px;height:50px;}
+.h0t{background-position:-100px -50px;width:50px;height:50px;}
+.h3{background-position:-100px -100px;width:50px;height:50px;}
+.h3t{background-position:-150px 0px;width:50px;height:50px;}
+
+
+.r1001{background-position:-200px 0px;width:50px;height:50px;}
+.r0-1-10{background-position:-200px 0px;width:50px;height:50px;}
+
+.r0110{background-position:-150px -50px;width:50px;height:50px;}
+.r-100-1{background-position:-150px -50px;width:50px;height:50px;}
+
+
+.r-1010{background-position:-150px -100px;width:50px;height:50px;}
+.r01-10{background-position:-150px -100px;width:50px;height:50px;}
+.r100-1{background-position:-150px -100px;width:50px;height:50px;}
+
+.r0-110{background-position:-200px -50px;width:50px;height:50px;}
+.r10-10{background-position:-200px -50px;width:50px;height:50px;}
+.r-1001{background-position:-200px -50px;width:50px;height:50px;}
+
+.r0{background-position:-150px -50px;width:50px;height:50px;}
+.r1{background-position:-150px -100px;width:50px;height:50px;}
+.r2{background-position:-200px 0px;width:50px;height:50px;}
+.r3{background-position:-200px -50px;width:50px;height:50px;}
+.s0{background-position:-200px -100px;width:50px;height:50px;}
+.s2{background-position:-200px -100px;width:50px;height:50px;}
+.s1{background-position:-250px 0px;width:50px;height:50px;}
+.s3{background-position:-250px 0px;width:50px;height:50px;}
+.t0{background-position:-250px -50px;width:50px;height:50px;}
+.t3{background-position:-250px -100px;width:50px;height:50px;}
+.t2{background-position:-300px 0px;width:50px;height:50px;}
+.t1{background-position:-300px -50px;width:50px;height:50px;}
+/* End Sprite Master CSS */
+

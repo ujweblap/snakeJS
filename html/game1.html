@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en" data-ng-app="gameApp">
+<head>
+    <meta charset="UTF-8">
+    <title>game</title>
+    <link rel="stylesheet" href="css/game.css">
+    <script src="js/jquery/jquery.js"></script>
+    <script src="js/angular/angular.js"></script>
+    <script src="js/game.js"></script>
+	<script src="js/gamepad.js"></script>
+</head>
+<body data-ng-controller="gameCtrl">
+    <div class="gamearea" data-ng-keydown="moveSnake($event)">
+        <div class="container" >
+		  <div class="row" data-ng-repeat="row in table">
+			<div class="elem"  data-ng-repeat="elem in row" ng-class="{'background-color':'red'}" ><img height="60" width="60" ng-src="img/{{elem.image}}.png"/></div>
+		  </div>
+		</div>
+    </div>
+</body>
+</html>

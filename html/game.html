@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en" data-ng-app="gameApp">
+<head>
+    <meta charset="UTF-8">
+    <title>game</title>
+    <link rel="stylesheet" href="css/game.css">
+    <link rel="stylesheet" href="css/snake.css">
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/gamepad.js"></script>
+    <script src="/js/jquery/dist/jquery.min.js"></script>
+    <script src="/js/angular/angular.min.js"></script>
+    <script src="/js/game.js"></script>
+</head>
+<body data-ng-controller="gameCtrl">
+	<div id="touch" class="touched">&nbsp;</div>
+	<div class="menu" data-ng-controller="menuCtrl">
+        <ul>
+            <li data-ng-click="newGame()">NewGame</li>
+            <li data-ng-click="newSnake()">NewSnake</li>
+            <li>{{key_pressed}}</li>
+            <li>{{dir}}</li>
+            <li>{{Site.snakeId}}</li>
+			<li ng-repeat="(key, val) in players"><span class="{{key}}">The player {{key}} has {{val}} !!!!!</span></li>
+        </ul>
+    </div>
+    <div class="gamearea" data-ng-keydown="moveSnake($event)">
+        <div class="container" >
+		  <div class="row" data-ng-repeat="row in map">
+			<div class="box {{elem.c}}" data-ng-repeat="elem in row"></div>
+		  </div>
+		</div>
+    </div>
+</body>
+</html>
